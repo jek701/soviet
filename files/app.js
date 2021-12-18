@@ -10,3 +10,5 @@ HiddenInfoWrapper.onclick = () => {
 HiddenInfoWrapper2.onclick = () => {
     HiddenInfo2.classList.toggle('hidden')
 }
+
+const App = []

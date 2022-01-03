@@ -1,26 +1,18 @@
-const HiddenInfoWrapper = document.getElementById('hidden-info-wrapper');
-const HiddenInfo = document.getElementById('hidden-info');
-const HiddenInfoWrapper2 = document.getElementById('hidden-info-wrapper-2');
-const HiddenInfo2 = document.getElementById('hidden-info-2');
-
-HiddenInfoWrapper.onclick = () => {
-    HiddenInfo.classList.toggle('hidden')
+const ShowEl = (el) => {
+    document.getElementById(el).classList.remove('hidden')
 }
 
-HiddenInfoWrapper2.onclick = () => {
-    HiddenInfo2.classList.toggle('hidden')
+const ToggleEl = (el) => {
+    document.getElementById(el).classList.toggle('hidden');
 }
 
 const onMouseOver = (i) => {
     const el = document.getElementById(i)
     el.classList.add('active')
-    // setTimeout(() => {el.classList.add('visible')}, 200)
 }
 
 const onMouseLeave = (i) => {
     const el = document.getElementById(i)
-    // setTimeout(() => {el.classList.remove('visible')}, 500)
-    // setTimeout(() => {}, 500)
     el.classList.remove('active')
 }
 

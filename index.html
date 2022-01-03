@@ -32,34 +32,25 @@
                 <ul class="no-list flex-row justify-around">
                     <li onmouseover="DropDownShow('first-li-drop')" onmouseout="DropDownHide('first-li-drop')">
                         <p>Ментальное здоровье</p>
-                        <div class="li-drop" id="first-li-drop">
-                            test
-                        </div>
                     </li>
                     <li onmouseover="DropDownShow('second-li-drop')" onmouseout="DropDownHide('second-li-drop')" class="active">
                         <p>Отношения</p>
                         <div class="li-drop" id="second-li-drop">
                             <ul class="no-padding no-list dropdown-list">
                                 <li>
-                                    <p>Ревность</p>
+                                    <a href="#">Ревность</a>
                                 </li>
                                 <li>
-                                    <p>Измена</p>
+                                    <a href="#">Измена</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li onmouseover="DropDownShow('third-li-drop')" onmouseout="DropDownHide('third-li-drop')">
                         <p>Женщинам</p>
-                        <div class="li-drop" id="third-li-drop">
-                            test
-                        </div>
                     </li>
                     <li onmouseover="DropDownShow('fourth-li-drop')" onmouseout="DropDownHide('fourth-li-drop')">
                         <p>Мужчинам</p>
-                        <div class="li-drop" id="fourth-li-drop">
-                            test
-                        </div>
                     </li>
                 </ul>
             </nav>
@@ -74,7 +65,7 @@
             </article>
             <img class="header-img" src="files/img/main-img.png" alt="">
             <div class="additional" id="hidden-info-wrapper">
-                <p class="additional-title font-weight">Содержание</p>
+                <p class="additional-title font-weight" onclick="ToggleEl('hidden-info')">Содержание</p>
                 <ul class="more hidden no-list no-padding" id="hidden-info">
                     <li><a href="#chto-takoe-mujskaya-revnost">Что такое мужская ревность?</a></li>
                     <li><a href="#mujskaya-i-jenskaya-revnost">Мужская и женская ревность</a></li>
@@ -88,14 +79,14 @@
                 </ul>
             </div>
         </section>
-<!--        <a name="chto-takoe-mujskaya-revnost"></a>-->
+        <a name="chto-takoe-mujskaya-revnost"></a>
         <section>
             <h2>
                 Что такое мужская ревность?
             </h2>
             <p>Такой феномен как ревность, несмотря на то, что изучается давно, существует фактически столько же, сколько и отношения между мужчиной и женщиной, до сих пор до конца не изучен
                 <span class="has-link">
-                    <a href="#first-link" onmouseover="onMouseOver('firstLink')" onmouseleave="onMouseLeave('firstLink')">[1]</a>
+                    <a href="#first-link" onclick="ShowEl('hidden-info-2')" onmouseover="onMouseOver('firstLink')" onmouseleave="onMouseLeave('firstLink')">[1]</a>
                     <span id="firstLink" class="link-block first">
                         Фароян, Г. Д. <a href="https://elibrary.ru/item.asp?id=36768089">Факторы, влияющие на проявления ревности</a> // Психология и педагогика в Крыму: пути развития : журн.. — 2018. — № 4. — С. 29—36. — УДК 159.9(G). — ISSN 2658-6126
                     </span>
@@ -107,13 +98,19 @@
                     <p><strong>Ревность</strong> - любое эмоциональное состояние, классифицируемое как специальная форма тревоги, считается, что оно происходит от недостатка уверенности в привязанности того, кто любим. Ревность направлена на третье лицо, конкурента, который воспринимается как захватывающий привязанность объекта любви.</p>
                 </blockquote>
             </div>
+        </section>
+        <a name="mujskaya-i-jenskaya-revnost"></a>
+        <section>
+            <h2>
+                Мужская и женская ревность
+            </h2>
             <h3>
                 Мужская ревность
             </h3>
             <p>
                 Исследователи полагают, что сама ревность сильно зависит от пола и имеет характерные гендерные черты
                 <span class="has-link">
-                    <a href="#second-link" onmouseover="onMouseOver('secondLink')" onmouseleave="onMouseLeave('secondLink')">[2]</a>
+                    <a href="#second-link" onclick="ShowEl('hidden-info-2')" onmouseover="onMouseOver('secondLink')" onmouseleave="onMouseLeave('secondLink')">[2]</a>
                     <span id="secondLink" class="link-block second">
                         Кристин Р. <a href="https://doi.org/10.1111%2F1471-6402.00112">Харрис. Факторы, связанные с ревностью по поводу реальной и воображаемой неверности: исследование перспектив социально-когнитивной и эволюционной психологии.</a> DOI: 10.1111/1471-6402.00112
                     </span>
@@ -134,13 +131,13 @@
             <p>
                 Чаще всего направлена на эмоциональную составляющую отношений
                 <span class="has-link">
-                    <a href="#fourth-link" onmouseover="onMouseOver('fourthLink')" onmouseleave="onMouseLeave('fourthLink')">[4]</a>
+                    <a href="#fourth-link" onclick="ShowEl('hidden-info-2')" onmouseover="onMouseOver('fourthLink')" onmouseleave="onMouseLeave('fourthLink')">[4]</a>
                     <span id="fourthLink" class="link-block fourth">
                         Эдлунд, Дж. Э., Сагарин, Б. Дж. ( 2017 ). <a href="https://doi.org/10.1016/bs.aesp.2016.10.004">Половые различия в ревности: ретроспектива 25 лет . Достижения экспериментальной социальной психологии,</a> 55, 259 - 302. DOI: 10.1016/bs.aesp.2016.10.004
                     </span>
                 </span>. И если проявление мужской ревности можно легко увидеть, то с женской все намного сложнее. Женщина может на протяжении очень долгого времени и вовсе не показывать свою ревность, но это вовсе не будет означать, что она не ревнует. В этот момент в ее душе может быть буря. У женской ревности отличается и психологический механизм возбуждения
                 <span class="has-link">
-                    <a href="#third-link" onmouseover="onMouseOver('thirdLink')" onmouseleave="onMouseLeave('thirdLink')">[3]</a>
+                    <a href="#third-link" onclick="ShowEl('hidden-info-2')" onmouseover="onMouseOver('thirdLink')" onmouseleave="onMouseLeave('thirdLink')">[3]</a>
                     <span id="thirdLink" class="link-block third">
                         Майкл В. Видерман Элизабет Райс Аллгейер. <a href="https://doi.org/10.1016/0162-3095(93)90011-6">Гендерные различия в сексуальной ревности: адаптивное объяснение или объяснение социального обучения?</a>  Этология и социобиология, том 14, выпуск 2, 1993, 115-140. DOI: 10.1016/0162-3095(93)90011-6
                     </span>
@@ -258,7 +255,7 @@
                         Собственная низкая самооценка.
                         В настоящий момент установлена взаимосвязь между ревностью мужчины и низкой самооценкой
                         <span class="has-link">
-                            <a href="#" onmouseover="onMouseOver('tenthLink')" onmouseleave="onMouseLeave('tenthLink')">[10]</a>
+                            <a href="#tenth-link" onclick="ShowEl('hidden-info-2')" onmouseover="onMouseOver('tenthLink')" onmouseleave="onMouseLeave('tenthLink')">[10]</a>
                             <span id="tenthLink" class="link-block tenth">
                                 Першина К.В. <a href="https://elibrary.ru/item.asp?id=39143420">Ревность как психологический барьер в отношениях.</a> Вестник науки. 2019. Т. 1. № 8 (17). С. 18-20.
                             </span>
@@ -494,24 +491,28 @@
         </section>
         <section>
             <div class="additional" id="hidden-info-wrapper-2">
-                <p class="additional-title font-weight">Источники</p>
+                <p class="additional-title font-weight" onclick="ToggleEl('hidden-info-2')">Источники</p>
                 <ol class="more hidden padding no-after-effects" id="hidden-info-2">
                     <li>
+                        <a name="first-link"></a>
                         <p>
                             Фароян, Г. Д. <a href="https://elibrary.ru/item.asp?id=36768089">Факторы, влияющие на проявления ревности</a> // Психология и педагогика в Крыму: пути развития : журн.. — 2018. — № 4. — С. 29—36. — УДК 159.9(G). — ISSN 2658-6126
                         </p>
                     </li>
                     <li>
+                        <a name="second-link"></a>
                         <p>
                             Кристин Р. <a href="https://doi.org/10.1111%2F1471-6402.00112">Харрис. Факторы, связанные с ревностью по поводу реальной и воображаемой неверности: исследование перспектив социально-когнитивной и эволюционной психологии.</a> DOI: 10.1111/1471-6402.00112
                         </p>
                     </li>
                     <li>
+                        <a name="third-link"></a>
                         <p>
                             Майкл В. Видерман Элизабет Райс Аллгейер. <a href="https://doi.org/10.1016/0162-3095(93)90011-6">Гендерные различия в сексуальной ревности: адаптивное объяснение или объяснение социального обучения?</a>  Этология и социобиология, том 14, выпуск 2, 1993, 115-140. DOI: 10.1016/0162-3095(93)90011-6
                         </p>
                     </li>
                     <li>
+                        <a name="fourth-link"></a>
                         <p>
                             Эдлунд, Дж. Э., Сагарин, Б. Дж. ( 2017 ). <a href="https://doi.org/10.1016/bs.aesp.2016.10.004">Половые различия в ревности: ретроспектива 25 лет . Достижения экспериментальной социальной психологии,</a> 55, 259 - 302. DOI: 10.1016/bs.aesp.2016.10.004
                         </p>
@@ -553,6 +554,7 @@
                         </p>
                     </li>
                     <li>
+                        <a name="tenth-link"></a>
                         <p>
                             Першина К.В. <a href="https://elibrary.ru/item.asp?id=39143420">Ревность как психологический барьер в отношениях.</a> Вестник науки. 2019. Т. 1. № 8 (17). С. 18-20.
                         </p>
